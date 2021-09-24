@@ -1,21 +1,22 @@
 @import "reset";
-@import "var";
+@import "variables";
 @import "mixin";
 @import 'media';
 html {
 	box-sizing: border-box;
+	font-size: 10px;
 }
 
 *,
 *::after,
 *::before {
-	box-sizing: inherit
+	box-sizing: inherit;
 }
 
 body {
 	background-color: rgb(25, 25, 25);
 	color: #fff;
-	font-family: 'HelveticaNeueCyr-Roman';
+	// font-family: 'HelveticaNeueCyr-Roman';
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -23,7 +24,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: #fff; 
 }
 
 ul {
@@ -32,7 +33,7 @@ ul {
 }
 
 .container {
-	max-width: 1140px;
+	max-width: 1440px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
