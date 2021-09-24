@@ -14,22 +14,27 @@ html {
 }
 
 body {
-	background-color: rgb(25, 25, 25);
-	color: #fff;
+	background-color: #fff;
+	color: #1D1D1B;
 	// font-family: 'HelveticaNeueCyr-Roman';
 	font-weight: normal;
-	font-size: 13px;
-	line-height: 18px;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
 	text-decoration: none;
-	color: #fff; 
+	color: #1D1D1B
 }
 
 ul {
 	list-style: none;
 	padding-left: 0;
+}
+h3{
+	color: #1D1D1B;
+	font-size: 5em;
+	font-weight: 700;
+	line-height: 1.2em;
 }
 
 .container {
@@ -37,3 +42,240 @@ ul {
 	padding: 0 15px;
 	margin: 0 auto;
 }
+//! HEADER
+.header {
+	padding: 13px 0 15px;
+	z-index: 10000;
+	background-color: #fff;
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+	&__nav {
+		display: flex;
+
+	}
+	&__nav-info {
+		display: flex;
+		align-items: center;
+		margin-right: 35px;
+	}
+	&__info-item + &__info-item {
+		margin-left: 25px;
+	}
+	&__info-link {
+		font-size: 1.7em;
+		font-weight: 700;
+	}
+	&__nav-contact {
+		display: flex;
+		align-items: center;
+	}
+	&__contact-item + &__contact-item {
+		margin-left: 20px;
+	}
+	&__contact-link {
+		font-size: 1.7em;
+		color: #5C5C59;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+	&-info__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 252px;
+		text-align: left;
+		position: relative;
+	}
+	&-info__content::after,
+	&-info__content::before{
+		position: absolute;
+		content: "";
+		width: 1px;
+		height: 78px;
+		background-color: #E8E8E8;
+		top: -16px;
+	}
+	&-info__content::after{
+		left: 0;
+	}
+	&-info__content::before{
+		right: 0;
+	}
+	&-info__phone {
+		font-size: 1.8em;
+		line-height: 1.2em;
+		font-weight: 700;
+	}
+	&-info__mail-link {
+		font-size: 1.5em;
+		line-height: 1.2em;
+		font-weight: 700;
+		margin-top: 5px;
+		color: #5C5C59;
+	}
+	&-info__mail {
+		width: 90px;
+		position: relative;
+	}
+	&-info__mail::after{
+		position: absolute;
+		content: "";
+		width: 1px;
+		height: 78px;
+		background-color: #E8E8E8;
+		top: -30px;
+		right: 0;
+	}
+	&__logo-link {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 170px;
+	}
+}
+
+.logo{
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		width: 110px;
+	}
+	&__title {
+		font-size: 2.7em;
+		font-weight: 700;
+		line-height: 1em ;
+	}
+	&__subtitle {
+		font-size: .9em;
+		font-weight: 300;
+		line-height: 1em ;
+	}
+}
+
+//! TOP
+.top {
+	background: linear-gradient(to right, #171F2C, #29384F);
+	padding: 104px 0 200px;
+	position: relative;
+	z-index: -2;
+	&__slider {
+
+	}
+	&__content {
+		
+	}
+	&__title {
+		font-size: 8em;
+		font-weight: 700;
+		line-height: 1.1em;
+		color: #fff;
+		margin-bottom: 44px;
+		
+	}
+	&__list {
+	
+	}
+	&__item {
+		color: #fff;
+		font-size: 1.8em;
+		line-height: 1.2em;
+		padding-left: 26px;
+		position: relative;
+	}
+	&__item::before{
+		content: url(../images/top-check.svg);
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	&__img {
+		position: absolute;
+		height: 600px;
+		width: 978px;
+		top: -20%;
+		right: 10%;
+		z-index: -1;
+	}
+}
+
+//! SERVICE
+.service {
+	padding: 93px 0 103px;
+	background-color: #fff;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+	&__title {
+		margin-bottom: 40px;
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 30px;
+		
+	}
+	&__box {
+		width: 450px;
+		padding: 42px 39px 43px;
+		height: 376px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: #F1F6F9;
+	}
+	&-box__title {
+		font-weight: 700;
+		font-size: 2.6em;
+		line-height: 1.3em;
+		span{
+			background-color: #00B8ED;
+			color: #fff;
+		}
+	}
+	&-box__img {
+		max-width: 200px;
+		margin: 0 auto;
+	}
+	&-box__suptitle {
+		font-weight: 400;
+		font-size: 1.6em;
+		line-height: 1.2em;
+	}
+	&-box__button {
+		padding: 23px 115px;
+		font-weight: 400;
+		text-align: center;
+		border: none;
+		background-color: #fff;
+		font-size: 2em;
+		line-height: 1.2em;
+	}
+	&__box-button{
+		background-image: url(../images/serv-bg-box.svg);
+		background-position:center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		align-items: center;
+	}
+}
+

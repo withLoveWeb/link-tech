@@ -1,0 +1,12 @@
+<svg width="136" height="160" viewBox="0 0 136 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M68 158.667L1 121.925V38.715L68 75.4569V158.667Z" stroke="#0072BA" stroke-miterlimit="10"/>
+<path d="M68 158.667L135 121.925V38.715L68 75.4569V158.667Z" stroke="#0072BA" stroke-miterlimit="10"/>
+<path d="M1 38.7145L68 1L135 38.7145" stroke="#0072BA" stroke-miterlimit="10"/>
+<path d="M67.9995 50.1696C80.4732 50.1696 90.585 43.9283 90.585 36.2293C90.585 28.5302 80.4732 22.2889 67.9995 22.2889C55.5259 22.2889 45.4141 28.5302 45.4141 36.2293C45.4141 43.9283 55.5259 50.1696 67.9995 50.1696Z" stroke="#0072BA" stroke-miterlimit="10"/>
+<path d="M67.9995 131.218C80.4732 131.218 90.585 124.977 90.585 117.278C90.585 109.579 80.4732 103.337 67.9995 103.337C55.5259 103.337 45.4141 109.579 45.4141 117.278C45.4141 124.977 55.5259 131.218 67.9995 131.218Z" stroke="#1D1D1B" stroke-miterlimit="10" stroke-dasharray="2 2"/>
+<path d="M42.5 51.5005L93 21.0005" stroke="black" stroke-dasharray="2 2"/>
+<path d="M42.5 132.5L93 102" stroke="black" stroke-dasharray="2 2"/>
+<path d="M45 21.039L95.3213 51.8331" stroke="black" stroke-dasharray="2 2"/>
+<path d="M45 102.039L95.3213 132.833" stroke="black" stroke-dasharray="2 2"/>
+<path d="M1 122.141L68 84.426L135 122.141" stroke="#1D1D1B" stroke-miterlimit="10" stroke-dasharray="2 2"/>
+</svg>
