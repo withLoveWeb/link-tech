@@ -2,6 +2,7 @@
 @import "variables";
 @import "mixin";
 @import 'media';
+
 html {
 	box-sizing: border-box;
 	font-size: 10px;
@@ -19,6 +20,7 @@ body {
 	// font-family: 'HelveticaNeueCyr-Roman';
 	font-weight: normal;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 
 a {
@@ -30,7 +32,8 @@ ul {
 	list-style: none;
 	padding-left: 0;
 }
-h3{
+
+h3 {
 	color: #1D1D1B;
 	font-size: 5em;
 	font-weight: 700;
@@ -42,11 +45,13 @@ h3{
 	padding: 0 15px;
 	margin: 0 auto;
 }
+
 //! HEADER
 .header {
 	padding: 13px 0 15px;
 	z-index: 10000;
 	background-color: #fff;
+
 	&__inner {
 		display: flex;
 		flex-direction: row;
@@ -54,40 +59,49 @@ h3{
 		align-items: center;
 		text-align: center;
 	}
+
 	&__nav {
 		display: flex;
 
 	}
+
 	&__nav-info {
 		display: flex;
 		align-items: center;
 		margin-right: 35px;
 	}
-	&__info-item + &__info-item {
+
+	&__info-item+&__info-item {
 		margin-left: 25px;
 	}
+
 	&__info-link {
 		font-size: 1.7em;
 		font-weight: 700;
 	}
+
 	&__nav-contact {
 		display: flex;
 		align-items: center;
 	}
-	&__contact-item + &__contact-item {
+
+	&__contact-item+&__contact-item {
 		margin-left: 20px;
 	}
+
 	&__contact-link {
 		font-size: 1.7em;
 		color: #5C5C59;
 		font-weight: 900;
 		text-transform: uppercase;
 	}
+
 	&__info {
 		display: flex;
 		align-items: center;
 		justify-content: end;
 	}
+
 	&-info__content {
 		display: flex;
 		flex-direction: column;
@@ -97,8 +111,9 @@ h3{
 		text-align: left;
 		position: relative;
 	}
+
 	&-info__content::after,
-	&-info__content::before{
+	&-info__content::before {
 		position: absolute;
 		content: "";
 		width: 1px;
@@ -106,17 +121,21 @@ h3{
 		background-color: #E8E8E8;
 		top: -16px;
 	}
-	&-info__content::after{
+
+	&-info__content::after {
 		left: 0;
 	}
-	&-info__content::before{
+
+	&-info__content::before {
 		right: 0;
 	}
+
 	&-info__phone {
 		font-size: 1.8em;
 		line-height: 1.2em;
 		font-weight: 700;
 	}
+
 	&-info__mail-link {
 		font-size: 1.5em;
 		line-height: 1.2em;
@@ -124,11 +143,13 @@ h3{
 		margin-top: 5px;
 		color: #5C5C59;
 	}
+
 	&-info__mail {
 		width: 90px;
 		position: relative;
 	}
-	&-info__mail::after{
+
+	&-info__mail::after {
 		position: absolute;
 		content: "";
 		width: 1px;
@@ -137,6 +158,7 @@ h3{
 		top: -30px;
 		right: 0;
 	}
+
 	&__logo-link {
 		display: flex;
 		flex-direction: row;
@@ -146,7 +168,7 @@ h3{
 	}
 }
 
-.logo{
+.logo {
 
 	&__content {
 		display: flex;
@@ -154,15 +176,17 @@ h3{
 		text-align: left;
 		width: 110px;
 	}
+
 	&__title {
 		font-size: 2.7em;
 		font-weight: 700;
-		line-height: 1em ;
+		line-height: 1em;
 	}
+
 	&__subtitle {
 		font-size: .9em;
 		font-weight: 300;
-		line-height: 1em ;
+		line-height: 1em;
 	}
 }
 
@@ -172,23 +196,22 @@ h3{
 	padding: 104px 0 200px;
 	position: relative;
 	z-index: -2;
-	&__slider {
 
-	}
-	&__content {
-		
-	}
+	&__slider {}
+
+	&__content {}
+
 	&__title {
 		font-size: 8em;
 		font-weight: 700;
 		line-height: 1.1em;
 		color: #fff;
 		margin-bottom: 44px;
-		
+
 	}
-	&__list {
-	
-	}
+
+	&__list {}
+
 	&__item {
 		color: #fff;
 		font-size: 1.8em;
@@ -196,7 +219,8 @@ h3{
 		padding-left: 26px;
 		position: relative;
 	}
-	&__item::before{
+
+	&__item::before {
 		content: url(../images/top-check.svg);
 		position: absolute;
 		width: 16px;
@@ -205,6 +229,7 @@ h3{
 		left: 0;
 		transform: translateY(-50%);
 	}
+
 	&__img {
 		position: absolute;
 		height: 600px;
@@ -219,21 +244,25 @@ h3{
 .service {
 	padding: 93px 0 103px;
 	background-color: #fff;
+
 	&__inner {
 		display: flex;
 		flex-direction: column;
 		text-align: left;
 	}
+
 	&__title {
 		margin-bottom: 40px;
 	}
+
 	&__content {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		gap: 30px;
-		
+
 	}
+
 	&__box {
 		width: 450px;
 		padding: 42px 39px 43px;
@@ -243,25 +272,29 @@ h3{
 		justify-content: space-between;
 		background-color: #F1F6F9;
 	}
+
 	&-box__title {
 		font-weight: 700;
 		font-size: 2.6em;
 		line-height: 1.3em;
-		span{
+
+		span {
 			background-color: #00B8ED;
 			color: #fff;
 		}
 	}
+
 	&-box__img {
 		max-width: 200px;
 		margin: 0 auto;
 	}
-	
+
 	&-box__suptitle {
 		font-weight: 400;
 		font-size: 1.6em;
 		line-height: 1.2em;
 	}
+
 	&-box__button {
 		padding: 23px 115px;
 		font-weight: 400;
@@ -271,12 +304,115 @@ h3{
 		font-size: 2em;
 		line-height: 1.2em;
 	}
-	&__box-button{
+
+	&__box-button {
 		background-image: url(../images/serv-bg-box.svg);
-		background-position:center;
+		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		align-items: center;
 	}
 }
 
+//! PROJECT
+.project {
+	background-color: #29374D;
+	padding: 71px 0 95px;
+	background-image: url(../images/project-bg.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__content-title {
+		display: flex;
+		align-items: end;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 127px;
+	}
+
+	&__title {
+		color: #fff;
+	}
+
+	&__link {
+		font-size: 2em;
+		line-height: 1.2em;
+		padding-right: 35px;
+		position: relative;
+		color: #fff;
+
+		&::after {
+			content: url(../images/project-arrow.svg);
+			position: absolute;
+			width: 20px;
+			height: 11px;
+			top: 0%;
+			right: 0;
+		}
+	}
+
+	&__content-main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__box,
+	&__wrapper-box {
+		width: 550px;
+	}
+
+	&__wrapper-box{
+		padding-left: 120px;
+		position: relative;
+		&:first-child::after{
+			position: absolute;
+			content: url(../images/project-2.png);
+			top: 0;
+			left: 0;
+			transform: translate(-34%, -22%);
+		}
+		&:last-child::after{
+			position: absolute;
+			content: url(../images/project-3.png);
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 84.5px;
+			height: 99px;
+		}
+	}
+
+	&__wrapper{
+		display: flex;
+		flex-direction: column;
+		row-gap: 80px;
+	}
+
+	&__box-img{
+		margin-bottom: 25px;
+	}
+
+	&__box-title {
+		font-size: 2.6em;
+		line-height: 1.2em;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	&__box-suptitle {
+		margin-top: 17px;
+		font-size: 1.6em;
+		line-height: 1.5em;
+		color: #fff;
+		margin-top: 17px;
+	}
+}
